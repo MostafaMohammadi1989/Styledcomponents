@@ -4,20 +4,20 @@ export default function propsTest() {
   return (
     <Wrapper>
       <Title>Hi Meisam</Title>
-      <Button>Normar</Button>
+      <Button>Normal</Button>
       <Button primary>Primary</Button>
     </Wrapper>
   );
 }
 
 const Button = styled.button`
-  background: ${(props) => (props.primary ? "palevioletred" : "white")};
-  color: ${(props) => (props.primary ? "white" : "palevioletred")};
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+  background: ${(props) => (props.primary ? "blue" : "white")};
+  color: ${(props) => (props.primary ? "white" : "blue")};
+  padding: 2em;
+  font-size: 1.4em;
+  margin: 1.2em;
+  border: 2px solid red;
+  border-radius: 0.6em;
 `;
 const Wrapper = styled.section`
   padding: 4em;
